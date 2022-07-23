@@ -220,7 +220,7 @@ if (!user) continue
 let afkTime = user.afkTime
 if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
-reply(`Jangan tag dia!
+reply(`Jangan tag dia deck!
 Dia sedang AFK ${reason ? '\nReason : ' + reason : 'Reason : Nothing'}
 Waktu : ${clockString(new Date - afkTime)}
 `.trim())
@@ -572,7 +572,7 @@ creator: m.sender,
 at: + new Date,
 locked: false,
 }
-reply(`Done!`)
+reply(`Succsess Deck!`)
 }
 break
 case 'deletecmd': case 'delcmd': {
@@ -3819,7 +3819,7 @@ case 'google': {
 4. ${prefix}foliokanan
 
 Contoh:
-${prefix}nuliskiri Subscribe Ya https://youtube.com/c/zeeoneofc`)
+${prefix}nuliskiri Polos https://www.instagram.com/zykuanx/`)
             break
         case 'nuliskiri': {
             if (text.length < 2) return reply(lang.KisahNabi(prefix, command, 'Support Bot WhatsApp'))
